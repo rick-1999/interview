@@ -39,7 +39,7 @@ describe("Factory", function () {
     it("Should Initial inquiry retrieveLastVault", async function () {
         await erc721.setApprovalForAll(factory.target, true);
         const vaultRes = await factory.retrieveLastVault()
-        expect(vaultRes.vault).to.equal("0x0000000000000000000000000000000000000000");
+        expect(vaultRes.vault).to.equal(zeroAddress);
         expect(vaultRes.mapLength).to.equal(0);
     });
 

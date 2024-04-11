@@ -10,7 +10,7 @@ contract Vault is ERC20, IVault , ISellOrder ,ReentrancyGuard{
     bytes4 internal constant ERC721_INTERFACE_ID = 0x80ac58cd;
 
     NFTInfo public NFT;
-    address internal Factory;
+    
     bool internal initializer;
      
     mapping(uint256 => SellOrder) public sellOrders;
